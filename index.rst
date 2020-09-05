@@ -10,7 +10,7 @@ Stop Printing - Start Logging
 :lang: en
 :status: published
 :author: Marvin Taschenberger
-:summary: 
+:summary:
 
 
 
@@ -28,7 +28,7 @@ Since theory and everything is nice - lets make a little more practical by using
     :code: python
 
 
-Note that most of the output is due to print and the longer the code runs the more likely it becomes that the ``do_instable_magic`` function will create an error - as in real life. 
+Note that most of the output is due to print and the longer the code runs the more likely it becomes that the ``do_unstable_magic`` function will create an error - as in real life.
 
 If now this programs crashes at some point and someone tells you to investigate and fix what went wrong. As you cannot recreate what has happened without any informations with this program you would be screwed and domed to make some try and error locally. As this is neither efficient, productive nor fun - we need to think about this scenarios already in the development stage. Seemingly the ``print`` function was not a good approach. It did work quite nicely while we were still in our local environment and executing the code manually but there are several disadvantages these statements do have:
 
@@ -81,7 +81,7 @@ Now all we need to do is to deploy the project and we will automatically keep a 
 
 Therefore we need to start thinking about a cleanup. We can either do that on the system level or within our code. But as most of the obvious task in python this is already wrapped together in an (awesome) library called ``loguru``. Personally, i haven been working with it since a long time and it is part of nearly all my productional services as it is easy to use and reduces the boilerplate code to a minimum. Moreover it ensures that my logging-practice stays homogeneous through out my projects. This library was original developed by delgan and i highly recommend you to check the `repo <https://github.com/Delgan/loguru>`_ out.
 
-All we need to do now is to  install ``loguru`` using `pip install ``loguru``   and specify two arguments - one for rotation and  one for retention - done.
+All we need to do now is to  install ``loguru`` using ``pip install loguru``   and specify two arguments - one for rotation and  one for retention - done.
 
 .. include:: examples/retention_and_rotation.py
     :code: python
